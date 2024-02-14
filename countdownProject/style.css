@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('desktop.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.blur-effect {
+    filter: blur(1.3px);
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.2);
+    filter: blur(10px);
+    height: 100vh;
+    width: 100%;
+    /* z-index: -1; */
+}
+
+.blur-effect1 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.306);
+    height: calc(100vh);
+    width: 100%;
+
+}
+
+.heading {
+    color: #ffffff;
+    z-index: 50;
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 10px;
+}
+
+.release-date {
+    margin-bottom: 2rem;
+}
+
+.countdown-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-countdown-show {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main-countdown-show div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-countdown-show div label {
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.main-countdown-show div input {
+    width: 40%;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    text-align: center;
+    background-color: #ffffff;
+    font-size: 2rem;
+    padding: 1.2rem 0;
+}
+
+.text {
+    margin-top: 40px;
+    font-size: 3rem;
+    color: #ffffff;
+    font-weight: 700;
+}
+.social-networks{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+.social-networks a {
+    text-decoration: none;
+    font-size: 2.5rem;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.fa-facebook {
+    /* background: #3B5998; */
+  background-color: rgba(0, 0, 0, 0.706);
+    color: white;
+}
+
+.fa-twitter {
+    background-color: rgba(0, 0, 0, 0.706);
+    /* background: #55ACEE; */
+    color: white;
+}
+
+.fa-google {
+    background-color: rgba(0, 0, 0, 0.706);
+    /* background: #dd4b39; */
+    color: white;
+}
+
+.fa-linkedin {
+    background-color: rgba(0, 0, 0, 0.706);
+    /* background: #007bb5; */
+    color: white;
+}
