@@ -11,7 +11,7 @@ console.log(shadowValue);
 range.forEach((curElm, i) => {
     curElm.addEventListener("input", (e) => {
         document.querySelector(".copied-text").innerHTML = "Copy";
-        let color = range[4].value;
+        let color = range[4].value; 
         let hslValue = e.target.value;
         let hslValue1 = Number(hslValue);
         hsl[i].innerHTML = `${hslValue1}px`;
