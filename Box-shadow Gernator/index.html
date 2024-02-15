@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow Gernator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="heading">Shadow Gerenator</h1>
+    <section class="main-container flex">
+        <div class="conatiner">
+            <div class="controller">
+                <div class="box-1">
+                    <div class="box-head flex">
+                        <p class="name">Horizontal Shadow Length</p>
+                        <p class="value">10px</p>
+                    </div>
+                    <input type="range" min="-198" max="198" value="10">
+                </div>
+                <div class="box-2">
+                    <div class="box-head flex">
+                        <p class="name">Vertical Shadow Length</p>
+                        <p class="value">10px</p>
+                    </div>
+                    <input type="range" min="-198" max="198" value="10">
+                </div>
+                <div class="box-3">
+                    <div class="box-head flex">
+                        <p class="name">Blur Radius</p>
+                        <p class="value">5px</p>
+                    </div>
+                    <input type="range" min="-198" max="198" value="5">
+                </div>
+                <div class="box-4">
+                    <div class="box-head flex">
+                        <p class="name">Spread Radius</p>
+                        <p class="value">0px</p>
+                    </div>
+                    <input type="range" min="-198" max="198" value="0">
+                </div>
+                <div class="box-5">
+                    <p class="name">Shadow Color</p>
+                    <div class="color">
+                        <input type="color">
+                    </div>
+                </div>  
+                <!-- <div class="box-6">
+                    <div class="box-head flex">
+                        <p class="name">Shadow Color Opacity</p>
+                        <p class="value">10px</p>
+                    </div>
+                    <input type="range" min="-198" max="198">
+                </div> -->
+            </div>
+        </div>
+        <div class="right">
+            <div class="box" id="box"></div>
+            <div class="value-of-shadow">
+                <p class="par-1"> box-shadow: 10px 10px 5px 0px #000000bf;</p>
+                <p class="par-2"> -webkit-box-shadow: 10px 10px 5px 0px #000000bf;</p>
+                <p class="par-3"> -moz-box-shadow: 10px 10px 5px 0px #000000bf;</p>
+            </div>
+            <button class="copied-text">Copy</button>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>
