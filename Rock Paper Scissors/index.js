@@ -29,7 +29,7 @@ console.log(timmer);
 
 let randomPlayerFunc = () => {
 
-    gameImg2.src = `/JavaScriptProjects/Rock Paper Scissors/game-${randomNo}.png`;
+    gameImg2.src = `game-${randomNo}.png`;
     randomPlayer.classList.toggle("show-left");
 }
 
@@ -44,7 +44,7 @@ rock.addEventListener("click", () => {
     console.log("ok");
     btn.disabled = false;
     mainPlayer.classList.toggle("show-right");
-    gameImg.src = `/JavaScriptProjects/Rock Paper Scissors/game-1.png`;
+    gameImg.src = `game-1.png`;
     rock.disabled = true;
     paper.disabled = true;
     scissor.disabled = true;
@@ -82,7 +82,7 @@ scissor.addEventListener("click", () => {
     btn.disabled = false;
     console.log("ok");
     mainPlayer.classList.toggle("show-right");
-    gameImg.src = `/JavaScriptProjects/Rock Paper Scissors/game-3.png`;
+    gameImg.src = `game-3.png`;
     rock.disabled = true;
     paper.disabled = true;
     scissor.disabled = true;
@@ -118,7 +118,7 @@ paper.addEventListener("click", () => {
     btn.disabled = false;
     console.log("ok");
     mainPlayer.classList.toggle("show-right");
-    gameImg.src = `/JavaScriptProjects/Rock Paper Scissors/game-2.png`;
+    gameImg.src = `game-2.png`;
     rock.disabled = true;
     paper.disabled = true;
     scissor.disabled = true;
