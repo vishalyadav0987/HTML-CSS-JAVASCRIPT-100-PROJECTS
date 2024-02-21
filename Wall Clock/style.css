@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #000000d2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 272px;
+    height: 272px;
+    border-radius: 50%;
+    border: 6px solid white;
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(360deg);
+    /* position: relative; */
+
+}
+
+li {
+    position: absolute;
+    list-style: none;
+}
+
+li:nth-child(3) {
+    transform: rotate(0deg) translate(100px) rotate(0deg);
+}
+
+li:nth-child(4) {
+    transform: rotate(30deg) translate(100px) rotate(-30deg);
+}
+
+li:nth-child(5) {
+    transform: rotate(60deg) translate(100px) rotate(-60deg);
+}
+
+li:nth-child(6) {
+    transform: rotate(90deg) translate(100px) rotate(-90deg);
+}
+
+li:nth-child(7) {
+    transform: rotate(120deg) translate(100px) rotate(-120deg);
+}
+
+li:nth-child(8) {
+    transform: rotate(150deg) translate(100px) rotate(-150deg);
+}
+
+li:nth-child(9) {
+    transform: rotate(180deg) translate(100px) rotate(-180deg);
+}
+
+li:nth-child(10) {
+    transform: rotate(210deg) translate(100px) rotate(-210deg);
+}
+
+li:nth-child(11) {
+    transform: rotate(240deg) translate(100px) rotate(-240deg);
+}
+
+li:nth-child(12) {
+    transform: rotate(270deg) translate(100px) rotate(-270deg);
+}
+
+li:nth-child(1) {
+    transform: rotate(300deg) translate(100px) rotate(-300deg);
+    animation: rotateK 0.5s linear 0.3s infinite ease;
+}
+
+
+li:nth-child(2) {
+    transform: rotate(330deg) translate(100px) rotate(-330deg);
+}
+
+li:nth-child(14) {
+    position: absolute;
+    background-color: aliceblue;
+    /* width: 270px;
+    height: 270px; */
+    background-color: rgba(0, 0, 0, 0.292);
+    /* animation: rotateK 8s infinite linear; */
+    /* transform: rotate(90deg); */
+}
+
+li:nth-child(14) p,li:nth-child(15) p,li:nth-child(16) p  {
+    clip-path: polygon(0 50%, 63% 44%, 63% 37%, 92% 49%, 64% 61%, 63% 54%, 0 51%);
+    width: 150px;
+    height: 150px;
+    background-color: rgba(240, 248, 255, 0.221);
+    position: absolute;
+    transform: rotate(180deg);
+    top: -76px;
+    left: -138px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+
+}
+
+li:nth-child(15) p {
+    clip-path: polygon(0 45%, 63% 44%, 65% 35%, 100% 50%, 64% 65%, 63% 54%, 0 54%);
+    width: 100px;
+    height: 100px;
+    top: -53px;
+    left: -94px;
+}
+li:nth-child(16) p {
+    clip-path: polygon(0 45%, 63% 44%, 65% 35%, 100% 50%, 64% 65%, 63% 54%, 0 54%);
+    width: 80px;
+    height: 80px;
+    top: -39px;
+    left: -76px;
+
+}
+
+@keyframes rotateK {
+    from {
+        transform: rotate(90deg);
+    }
+
+    to {
+        transform: rotate(450deg);
+    }
+}
