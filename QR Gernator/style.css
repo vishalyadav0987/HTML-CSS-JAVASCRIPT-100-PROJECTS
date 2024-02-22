@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conatiner{
+    background-color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.conatiner input{
+    margin-top: 1rem;
+    width: 100%;
+    font-size: 20px;
+    outline: 0;
+    padding:5px 7px ;
+}
+.conatiner button{
+    margin-top: 1rem;
+   width: 100%;
+    background-color: blueviolet;
+    color: white;
+    font-size: 16px;
+    padding: 5px 40px;
+    border: 2px solid rgb(9, 74, 239);
+    transition: background 0.2s linear;
+}
+.conatiner button:active{
+    background: rgb(0, 0, 0);
+}
+.QRCode{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8ms linear;
+}
+.QRCode #Qrimg{
+    width: 100%;
+}
+.QRCode.show-img{
+    margin-top: 1rem;
+    max-height: 300px;
+}
