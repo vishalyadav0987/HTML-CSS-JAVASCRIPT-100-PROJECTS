@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <section class="body-section">
+        <div class="container">
+            <div class="header">
+                <h1 class="heading">Expanse Tracker</h1>
+                <h3>&#8377;Net Earning</h3>
+                <div class="earning-value net">&#8377;0</div>
+            </div>
+            <div class="dashboard-container">
+                <h3 class="dashboard-heading">Dashboard</h3>
+                <div class="line"></div>
+                <div class="dashboard-list">
+                    
+                    <!-- <div class="dashbord-item">
+                        <div class="expanse-value-name">
+                            <div class="expanse-name">Trading</div>
+                        <div class="expanse-value">&#8377;300</div>
+                        </div>
+                        <div class="expanse-type debit">D</div>
+                       
+                    </div>
+                     -->
+                </div>
+            </div>
+            <div class="bottom-container-controller" >
+               <div class="uppper-box">
+                <div class="key-box">
+                    <p class="key-text">Expanse Name</p>
+                    <input type="text" id="expanse-name-input">
+                </div>
+                <div class="value-box">
+                    <p class="value-text">Expanse rate</p>
+                    <input type="text" id="expanse-value-input">
+                </div>
+               </div>
+              <div class="bottom-box">
+                <button id="earning-btn">
+                    <div class="earning-value-tot">&#8377;0</div>
+                    <div class="earning-text">Credit</div>
+                </button>
+                <button id="lost-btn">
+                    <div class="lost-value">&#8377;0</div>
+                    <div class="lost-text">Debit</div>
+                </button>
+              </div>
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
