@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('notes.avif');
+    background-position: center;
+    background-size: cover;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.header {
+    background-color: #cf9263;
+    width: 100%;
+    height: fit-content;
+    padding: 1.2rem 1rem;
+    display: flex;
+    gap: 10px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    border-bottom: 2px solid white;
+    cursor: pointer;
+}
+
+.btn {
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: #cf9263;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 1rem 2.5rem;
+    border: 2px solid white;
+    border-radius: 6px;
+    float: right;
+    margin-right: 15px;
+}
+
+.btn:hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+.main-note-conntainer {
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+.box {
+    margin-left: 1.2rem;
+    margin-bottom: 1.2rem;
+    margin-top: 1rem;
+    width: 400px;
+    height: 220px;
+    background-color: #ffffff;
+    border-bottom: 10px solid #cf9263;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.header-trash {
+    display: flex;
+    gap: 15px;
+    justify-content: end;
+    padding: 0.6rem 1rem;
+}
+
+#textarea {
+    width: 100%;
+    height: 77%;
+    outline: none;
+    border: none;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.note-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 6rem
+}
+
+.main {
+    position: absolute;
+    width: 24%;
+    height: fit-content;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.hidden {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+#SaveNote {
+
+    background-color: rgb(67, 34, 34);
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+#SaveNote:active {
+    transition: all 3ms ease;
+    background-color: white;
+    color: black;
+
+}
+
+#delteNote {
+    
+    background-color:  #7c3600;;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+#delteNote:active {
+    transition: all 3ms ease;
+    background-color: white;
+    color: black;
+
+}
