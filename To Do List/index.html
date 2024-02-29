@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo"><span class="bold">TODO</span> List</div>
+    </div>
+    <section class="body-section" >
+        <div class="container home-interface">
+            <div class="home-header">
+                <div class="home-l">
+                    <span class="user-name">Aur Bhai, Kiasa Hai !!</span>
+                </div>
+                <div class="home-r">
+                    <span class="salutation-day">Good Morning Ji !</span>
+                    <span class="user-img">
+                        <img src="user.png" alt="" id="useri-img">
+                        <input type="file" id="img-src" onchange="imgSetter()" accept="image/*">
+                        <span id="take-img"><i class="fa-solid fa-plus"></i></span>
+                    </span>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="dashbord-list">
+                <div class="current-date">
+                    <span class="icon clock"><i class="fa-solid fa-clock"></i></span>
+                    <div class="date-text">
+                        <span>Currrent Date</span>
+                        <span id="current-date"></span>
+                    </div>
+                </div>
+                <div class="current-location">
+                    <span class="icon location"> <i class="fa-solid fa-location-dot"></i></span>
+                    <div class="location-text">
+                        <span>Currrent Loaction</span>
+                        <span id="current-location">New Delhi,Delhi</span>
+                    </div>
+                </div>
+                <div class="current-temperature">
+                    <span class="icon temperature"> <i class="fa-solid fa-temperature-three-quarters"></i></span>
+                    <div class="temperature-text">
+                        <span>Currrent Temperature</span>
+                        <span>34 °C</span>
+                    </div>
+                </div>
+                <div class="current-feeling">
+                    <div class="upp">
+                        <span class="icon feeling"><i class="fa-solid fa-face-smile"></i></span>
+                        <span class="feeling-text">How are you feeling today?</span>
+                    </div>
+                    <div class="down">
+                        <span id="1">💀</span>
+                        <span id="2">💦</span>
+                        <span id="3">💰</span>
+                        <span id="4">😎</span>
+                        <span id="5">🍑</span>
+                    </div>
+                </div>
+                <div class="next-page-direction">
+                    <span>Check out your today's activity</span>
+                    <span id="go-to-next">Here <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="body-2-section" style="display: none;">
+        <div class="home-header">
+            <div class="home-l">
+                <span class="user-name">Aur Bhai, Kiasa Hai !!</span>
+            </div>
+            <div class="home-r">
+                <span class="salutation-day" id="present-time"></span>
+                <span class="user-img"></span>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="list-of-works">
+            <!-- <div class="work-1">
+                <div class="work-name">
+                    <input type="checkbox" id="checkbox">
+                    <span class="work-text">Os Theory CA-1 Friday</span>
+                </div>
+                <div class="work-information">
+                    <span class="alram-box">
+                        <span><i class="fa-solid fa-bell"></i></span>
+                        <span class="time-stamp">9:30 AM</span>
+                    </span>
+                    <span class="information-box">
+                        <span><i class="fa-solid fa-suitcase"></i></span>
+                        <span class="work-type">Work</span>
+                    </span>
+                </div>
+            </div>  -->
+        </div>
+    </section>
+    <section class="body-3-section" style="display: none;">
+        <div class="home-header">
+            <div class="home-l">
+                <span class="user-name">Aur Bhai, Kiasa Hai !!</span>
+            </div>
+            <div class="home-r">
+                <span class="salutation-day" id="present-time-2">Today's 20 Feburary,2024</span>
+                <span class="user-img"></span>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="month-dates"></div>
+        <div id="calendar"></div>
+        <div class="list-of-works-All">
+           
+        </div>
+    </section>
+    <section class="body-4-section hide">
+        <div class="conatiner">
+            <div class="left-side">
+                <h1>TODO List Controller</h1>
+                <div class="main-box">
+                    <div class="control-1">
+                        <span class="heading-task">Task</span>
+                        <input type="text" required id="task-name">
+                    </div>
+                    <div class="control-2">
+                        <span class="alaram-timing-heading">Set Alram</span>
+                        <input type="time" id="alaram-timing">
+                    </div>
+                    <div class="control-3">
+                        <span class="alaram-timing-heading">Which Date You Set This Task</span>
+                        <input type="date" id="task-date">
+                    </div>
+                    <div class="control-4">
+                        <span class="alaram-timing-heading">Task Type</span>
+                        <div class="radios">
+                            <label for="Classwork">Classwork</label>
+                            <input type="radio" class="task-type" value="Classwork" name="work">
+                            <label for="College Work">College Work</label>
+                            <input type="radio" class="task-type" value="College Work" name="work">
+                            <label for="Office Work">Office Work</label>
+                            <input type="radio" class="task-type" value="Office Work" name="work">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-side">
+                <h2 id="monthYear"> </h2>
+
+                <table id="calendar">
+                    <thead>
+                        <tr>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </tr>
+                    </thead>
+                    <tbody id="calendarBody">
+                    </tbody>
+                </table>
+                <button id="prevMonth"><</button>
+                <button id="nextMonth">></button>
+                <button class="submit-btn">Add Task</button>
+            </div>
+            <span class="close-btn"><i class="fa-solid fa-xmark" onclick="showingController()"></i></span>
+        </div>
+        <div class="darken"></div>
+    </section>
+    <section class="pop-section">
+        <div class="box">
+          <p class="cart-added-text">Cart is added</p>
+          <div class="line2"></div>
+        </div>
+      </section>
+    <section class="controller-section">
+        <div class="controller-container">
+            <i class="fa-solid fa-house" id="to-home"></i>
+            <span><i class="fa-solid fa-plus" id="to-add" onclick="showingController()"></i></span>
+            <i class="fa-solid fa-bars" id="to-data"></i>
+        </div>
+    </section>
+    <script src="index.js"></script>
+    <script src="index-2.js"></script>
+</body>
+
+</html>
