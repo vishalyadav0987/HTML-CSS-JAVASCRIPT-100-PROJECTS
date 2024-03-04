@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Gerenator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="box">
+        <h1>Password Gerenator</h1>
+        <div class="container">
+            <label for="text">Random Password</label>
+            <input type="text" id="Password">
+            <div class="password-type-box">
+               <div class="type-1 flex">
+                <span>Password Length</span>
+                <input type="text" id="length">
+               </div>
+               <div class="type-2 flex">
+                <span>Contain Uppercase</span>
+                <input type="checkbox" id="Uppercase">
+               </div>
+               <div class="type-3 flex">
+                <span>Contain Lowercase</span>
+                <input type="checkbox" id="Lowercase">
+               </div>
+               <div class="type-4 flex">
+                <span>Contains Number</span>
+                <input type="checkbox" name="" id="number">
+               </div>
+               <div class="type-5 flex">
+                <span>Contains Symbols</span>
+                <input type="checkbox" id="Symbols">
+               </div>
+            </div>
+            <button>Gerenate</button>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
