@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* font-size: 10px; */
+    /* 10px / 16px = 0.625 = 62.5% */
+    /* default 1rem = 16px  */
+    /* 10px sahuliyat ke liye */
+    /* font-size: 62.5%; */
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #f7ebe1;
+}
+
+::-webkit-scrollbar {
+    display: none;
+    scroll-behavior: smooth;
+}
+
+.header {
+    background-color: #ffffff;
+    color: #063b45;
+    font-size: 2rem;
+    padding: 1.2rem 0.8rem;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+
+}
+
+.right-side {
+    font-size: 1.2rem;
+    display: flex;
+    gap: 3rem;
+    padding: 0 70px;
+    color: #063b45;
+    font-weight: 500;
+}
+
+span {
+    cursor: pointer;
+
+}
+
+.logo .bold {
+    font-weight: 600;
+    font-size: 2.2rem;
+}
+
+.home-header {
+    padding: 20px 15px;
+}
+
+.body-header {
+    width: 100%;
+    /* background-color: red; */
+    margin-bottom: 3rem;
+}
+
+.container {
+    width: 1280px;
+    /* background-color: aqua; */
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 0 90px;
+}
+
+.fa-chart-simple,
+.fa-star,
+.fa-clock {
+    color: #ffffff;
+    background-color: #008000c6;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center
+}
+
+.fa-star {
+    background-color: orange;
+}
+
+.fa-clock {
+    background-color: #063b45;
+
+}
+
+.dashboard,
+.moves,
+.score-text {
+    background-color: #fff;
+    padding-right: 20px;
+    border-radius: 18px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.time-txt,
+.score-txt,
+.level-txt {
+    font-weight: 600;
+    color: #063b45;
+    font-size: 1.1rem;
+}
+
+.time-count,
+.score-count,
+.level-count {
+    font-weight: normal;
+}
+
+.section-one {
+    width: 100%;
+    /* background-color: red; */
+    margin-bottom: 1rem;
+}
+
+.container-1 {
+    width: 1200px;
+    margin: 0 auto;
+    /* background-color: #063b45; */
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    padding: 0 50px;
+}
+
+.card {
+    width: 150px;
+    height: 170px;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.5s;
+    /* flex: 1; */
+    position: relative;
+    cursor: pointer;
+
+}
+
+.show {
+    display: "";
+}
+
+.hide {
+    display: none;
+}
+
+.card-overlay {
+    /* position: absolute; */
+    width: 150px;
+    height: 170px;
+    background-color: rgba(255, 0, 0, 0.407);
+    border-radius: 8px;
+    z-index: 20;
+
+}
+
+.section-two {
+    width: 100%;
+    height: 100%;
+    /* background-color: #063b45; */
+    display: none;
+    position: relative;
+    z-index: 30;
+}
+
+.box-type {
+    margin-top: 5;
+    background-color: #ffffff;
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 0px;
+    position: relative;
+    border-radius: 16px;
+    box-shadow: 4px 2px 5px rgba(0, 0, 0, 0.279);
+}
+
+.star-icon {
+    font-size: 10rem;
+    position: absolute;
+    top: -20%;
+    filter: drop-shadow(0 0 0.75rem rgb(241, 186, 114));
+}
+
+.grade {
+    width: 100%;
+    height: 20%;
+    background-color: rebeccapurple;
+    text-align: center;
+    font-size: 5rem;
+    padding: 20px 10px;
+    color: white;
+    margin-bottom: 1.5rem;
+    margin-top: 15vh;
+}
+
+.score-box {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.score-text,
+.moves {
+    font-size: 1.2rem;
+    background-color: #f7ebe1;
+    padding: 10px 30px;
+    margin-bottom: 1.5rem;
+}
+
+.score-text::before,
+.moves::before {
+    content: "Score:";
+    font-weight: 600;
+    color: #063b45;
+    font-size: 1.2rem;
+}
+
+.moves::before {
+    content: "Moves:";
+}
+
+.continue-btn {
+    font-size: 1.4rem;
+    color: white;
+    font-weight: 600;
+    background-color: #063b45;
+    padding: 10px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.dummy-txt {
+    pointer-events: none;
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+    background-color: #000000a6;
+    display: none;
+}
+
+.level-section {
+    width: 100%;
+    padding: 10px 30px;
+}
+
+.levels {
+    width: 100%;
+    background-color: #063b45;
+    border-radius:10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    align-items: center;
+}
+
+.levels .level-text{
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+}
+.levels span{
+    font-size: 1.5rem;
+    color: white;
+}
