@@ -212,7 +212,7 @@ levels.forEach((curLevel) => {
 
 
         continueBtn.addEventListener("click",()=>{
-            location.reload()
+            location.reload();
             
         })
 
