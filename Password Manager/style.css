@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* font-size: 10px; */
+    /* 10px / 16px = 0.625 = 62.5% */
+    /* default 1rem = 16px  */
+    /* 10px sahuliyat ke liye */
+    /* font-size: 62.5%; */
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #202124;
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+    scroll-behavior: smooth;
+}
+
+.header {
+    background-color: #323336;
+    color: #ffffff;
+    font-size: 2rem;
+    padding: 1.2rem 0.8rem;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 3rem; */
+
+}
+
+.right-side {
+    font-size: 1.2rem;
+    display: flex;
+    gap: 3rem;
+    padding: 0 70px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+span {
+    cursor: pointer;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    margin-right: 10px;
+}
+
+.logo .bold {
+    font-weight: 600;
+    font-size: 2.2rem;
+}
+
+.home-header {
+    padding: 20px 15px;
+}
+
+/*#292a2d*/
+.section-one,
+.section-two,
+.section-three,
+.section-four {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.top .heading {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+#cancel-btn,
+#cancel-btn-edit,
+.add-btn,
+#edit,
+#Delete {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #A8c7FA;
+    border: 1px solid #00639b;
+    padding: 8px 25px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.main-container {
+    margin-top: 3rem;
+    width: 45%;
+}
+
+.desc {
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.container {
+    background-color: #292a2d;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: hidden;
+}
+
+.password-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 22px;
+    transition: all 0.5s ease;
+}
+
+.site-name {
+    color: #c7c7c7;
+}
+
+.more-info-icon i {
+    transform: rotate(-90deg);
+    color: #c7c7c7;
+    background: transparent;
+    padding: 2px;
+
+}
+
+.more-info-icon {
+    transition: all 0.5s ease;
+}
+
+.more-info-icon:active {
+    background-color: #494a4d;
+    border-radius: 50%;
+}
+
+.line {
+    display: block;
+    background-color: #ffffff3d;
+    height: 1px;
+    width: 100%;
+    margin-left: 30px;
+}
+
+.password-details:hover {
+    background-color: #323336;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background: #292a2d;
+}
+
+.section-two {
+    height: calc(100vh);
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+}
+
+.information-container {
+    background-color: #292a2d;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 32rem;
+    padding: 20px 20px;
+
+}
+
+.information-container h2 {
+    color: #fff;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+.site-container,
+.note-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.site-container input {
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 1rem;
+    background-color: #444746;
+    color: #c7c7c7;
+}
+
+.information-container .site-container:nth-child(2) span,
+.information-container .site-container:nth-child(4) span {
+    color: #f2b8b5;
+}
+.information-container .site-container:nth-child(3) input{
+    border-bottom: 2px solid #b5c0f2;
+}
+
+.site-container:nth-child(2) input,
+.site-container:nth-child(4) input {
+    border-bottom: 2px solid #f2b8b5;
+}
+
+
+hr {
+    margin-bottom: 1rem;
+}
+
+.site-container span,
+.note-container span {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: white;
+    padding-left: 0.5rem;
+}
+
+textarea {
+    margin-bottom: 2rem;
+    border: none;
+    outline: none;
+    height: 80px;
+    padding: 8px 10px;
+    border-radius: 10px 10px 0 0;
+    background-color: #444746;
+    color: #c7c7c7;
+    font-size: 1rem;
+}
+
+.submit-container {
+    float: right;
+}
+
+#save-btn,
+#save-btn-edit {
+    background-color: #323336;
+    outline: none;
+    border: none;
+    padding: 10px 25px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.section-three {
+    flex-direction: column;
+}
+
+.container-three {
+    width: 40%;
+}
+
+.container-three h1 {
+    color: #c7c7c7;
+    font-weight: normal;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+
+}
+
+.container-password-detail {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #292a2d;
+    padding: 20px 30px;
+}
+
+.top,
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.top span,
+.bottom span {
+    color: #c5c5c5;
+}
+
+.section-1,
+.section-2 {
+    flex: 1;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+a {
+    color: #c5c5c5;
+}
+
+.container-password-detail input {
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background-color: #444746;
+    cursor: not-allowed;
+}
+
+.container-password-detail .line {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 0;
+}
+
+.controller {
+    display: flex;
+    gap: 1rem;
+}
+
+.controller #edit,
+.controller #Delete {
+    padding: 10px 25px;
+}
+
+i {
+    cursor: pointer;
+}
+
+.container-three h1 {
+    display: flex;
+    align-items: center;
+}
+
+.container-three h1 i {
+    margin-right: 10px;
+}
+
+.section-four {
+    position: absolute;
+    top: 0;
+    height: calc(100vh);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.container-password-detail input{
+    color: #c7c7c7a4;
+}
+
+.fa-copy{
+    position: absolute;
+    right:10px;
+    top: 36px;
+    color: #c5c5c5;
+    font-size: 1.1rem;
+    /* z-index: 7; */
+
+}
+
+.eys{
+    position: absolute;
+    top: 36px;
+    right: 35px;
+}
+.eys img{
+    position: absolute;
+    left: -20px;
+    /* z-index: 7; */
+    width: 20px;
+    filter: invert(1);
+}

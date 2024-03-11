@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password-Manager</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo"><i class="fa-solid fa-eye"></i><span class="bold">P</span>assword Manager</div>
+    <div class="right-side">
+      <span class="home">Main menu</span>
+      <span class="setting">Contact</span>
+      <span class="setting">About Us</span>
+    </div>
+  </div>
+  <section class="section-one">
+    <div class="main-container">
+      <div class="top">
+        <h1 class="heading">Passwords</h1>
+        <button class="add-btn">Add</button>
+      </div>
+      <div class="desc">Create, save, and manage your passwords so you can easily sign in to sites and apps.</div>
+      <div class="container">
+        <!-- <div class="password-details">
+                <span class="site-name">google.com</span>
+                <span class="more-info-icon"><i class="fa-solid fa-caret-down"></i></span>
+            </div>
+            <div class="line"></div>
+            <div class="password-details">
+                <span class="site-name">google.com</span>
+                <span class="more-info-icon"><i class="fa-solid fa-caret-down"></i></span>
+            </div>
+            <div class="line"></div>
+            <div class="password-details">
+                <span class="site-name">google.com</span>
+                <span class="more-info-icon"><i class="fa-solid fa-caret-down"></i></span>
+            </div> -->
+      </div>
+    </div>
+  </section>
+
+  <section class="section-two" style="display: none;">
+    <div class="information-container">
+      <h2>Add new password</h2>
+      <!-- <form class="form-info"> -->
+      <div class="site-container">
+        <span class="site-txt">Site</span>
+        <input type="text" placeholder="example.com" id="siteId" required>
+      </div>
+      <div class="site-container">
+        <span class="site-txt">Username</span>
+        <input type="text" id="username" required>
+      </div>
+      <div class="site-container">
+        <span class="site-txt">Password</span>
+        <input type="text" id="password" required value="">
+        <div class="desc">Make sure you're saving your current password for this site</div>
+        <hr>
+      </div>
+      <div class="note-container">
+        <span class="note-text">Note</span>
+        <textarea name="" id="desc"></textarea>
+      </div>
+      <div class="submit-container">
+        <button id="cancel-btn">Cancel</button>
+        <button id="save-btn">Save</button>
+      </div>
+      <!-- </form> -->
+    </div>
+  </section>
+
+  <section class="section-three" style="display: none;">
+    <div class="container-three">
+      <h1><i class="fa-solid fa-arrow-left"></i> <span>aspiringminds.com</span></h1>
+
+      <div class="container-password-detail">
+        <div class="top">
+          <div class="section-1">
+            <span>Username</span>
+            <input type="text" id="username-value">
+            <i class="fa-regular fa-copy" id="username-copy"></i>
+          </div>
+          <div class="section-2">
+            <span>Sites</span>
+            <a href="" id="site-value">aspiringminds.com</a>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="section-1">
+            <span>Password</span>
+            <input type="password" id="password-value">
+            <i class="fa-regular fa-copy" id="password-copy"></i>
+            <div class="eys">
+              <img src="show.png" alt="" class="show">
+              <img src="hide.png" alt="" class="hide">
+            </div>
+          </div>
+          <div class="section-2">
+            <span>Note</span>
+            <input type="text" id="note-value">
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="controller">
+          <button id="edit">Edit</button>
+          <button id="Delete">Delete</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-four" style="display: none;">
+    <div class="information-container">
+      <h2>Edit Password</h2>
+      <!-- <form class="form-info"> -->
+      <div class="site-container">
+        <span class="site-txt">Sites</span>
+        <a href="" id="edit-site" style="margin-bottom: 0.8rem; padding-left: 4px;">instrgram.com</a>
+      </div>
+      <div class="site-container">
+        <span class="site-txt">Username</span>
+        <input type="text" placeholder="example.com" id="username-edit" required>
+      </div>
+      <div class="site-container">
+        <span class="site-txt">Password</span>
+        <input type="text" placeholder="example.com" id="password-edit" required value="">
+        <div class="desc">Make sure the password you are saving matches your password for amcatcampus.aspiringminds.com
+        </div>
+        <hr>
+      </div>
+      <div class="note-container">
+        <span class="note-text">Note</span>
+        <textarea name="" id="desc-edit"></textarea>
+      </div>
+      <div class="submit-container">
+        <button id="cancel-btn-edit">Cancel</button>
+        <button id="save-btn-edit">Save</button>
+      </div>
+      <!-- </form> -->
+    </div>
+  </section>
+  <script src="index.js"></script>
+</body>
+
+</html>
