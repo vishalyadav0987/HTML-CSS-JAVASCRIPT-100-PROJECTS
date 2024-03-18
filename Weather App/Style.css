@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #434343;
+}
+
+.section-one {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.container {
+    background: linear-gradient(170deg, #08aeea, #2af598);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 80px;
+    width: 30rem;
+    border-radius: 10px;
+}
+
+.top {
+    width: 100%;
+    padding: 30px 40px;
+    
+}
+.serching-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#search {
+    font-size: 1.4rem;
+    outline: none;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 50px;
+    flex: 0.9;
+}
+.search-icon i{
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all 0.5s;
+    color: black;
+}
+.search-icon i:active{
+    transform: scale(0.9);
+}
+.search-icon{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+input::placeholder{
+    font-size: 1rem;
+}
+
+
+.bottom{
+    display: none;
+    width: 100%;
+    height: 0%;
+    /* display: flex; */
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    transition: all 0.5s ease;
+}
+
+.temperature{
+    font-size: 4.5rem;
+    color: #fff;
+}
+.country-name{
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+.info-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 12px 40px 30px;
+}
+.left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 3px;
+}
+.upp,.low{
+    display: flex;
+    gap: 10px;
+}
+.humidity,.wind-speed{
+    font-size: 1.4rem;
+    color: white;
+}
+i{
+    font-size: 1.4rem;
+    color: #fff;
+}
+.humidity-txt,.wind-txt{
+    font-size: 1.2rem;
+    color: #ffd;
+}
