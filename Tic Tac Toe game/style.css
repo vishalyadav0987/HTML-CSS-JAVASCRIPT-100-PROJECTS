@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section {
+    background-color: #1777ff;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 70%;
+    height: 80%;
+    background-color: #22242a;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.left-box {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    background-color: #1b1e22;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    padding: 1rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+.boxes:nth-child(even) {
+    color: white;
+}
+
+.boxes:nth-child(odd) {
+    color: #1777ff;
+}
+
+.boxes {
+    background-color: #22242a;
+    font-size: 4rem;
+    font-weight: 700;
+    padding: 6px 20px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    width: 88px;
+    height: 88px;
+}
+
+.right-box {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+}
+
+.right-box h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-align: start;
+    width: 70%;
+    margin-bottom: 0.5rem;
+}
+
+.desc {
+    font-size: 1.2rem;
+    color: #747474;
+    margin-bottom: 1.6rem;
+}
+
+.player-info {
+    display: flex;
+    gap: 0rem;
+    width: 70%;
+    margin-bottom: 1.6rem;
+}
+
+.you,
+.computer {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.you-txt {
+    font-size: 1rem;
+    color: #c5c5c5;
+}
+
+.boxes-1 {
+    background-color: #363941;
+    font-size: 4rem;
+    font-weight: 700;
+    padding: 6px 20px;
+    border: 2px solid #747474;
+    color: #747474;
+    border-radius: 2px;
+    width: 88px;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: not-allowed;
+}
+
+#reset {
+    width: fit-content;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #1777ff;
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px black;
+    border: none;
+    outline: none;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+#reset:active {
+    transform: scale(0.9);
+
+}
+
+.border {
+
+    border: 2px solid #747474;
+}
+
+.line {
+    /* display: block; */
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+.section-two {
+    top: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.container-game-over-card{
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    gap: 1rem;
+}
+.container-game-over-card img{
+    width: 30%;
+    height: 30%;
+    margin-top: 1.8rem;
+    margin-bottom: 1rem;
+}
+.points{
+    font-size: 1.8rem;
+    margin-bottom: 2px;
+}
+.tag{
+    font-size: 1.4rem;
+}
+.play{
+    padding:8px 20px;
+    font-size: 1.4rem;
+    border: none;
+    outline: none;
+    background-color: #434343;
+    color: white;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.play:active{
+    transform: scale(0.9);
+}
+
+.show{
+    display: "";
+}
+.hide{
+    display: none;
+}
+button:disabled{
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+@media (max-width:1095px) {
+    .container{
+        flex-direction: column;
+    }
+    .right-box{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+    }
+    .boxes-1{
+        padding: 6px 0px;
+    }
+}
